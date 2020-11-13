@@ -316,7 +316,8 @@ h4 {
 
 .block {
   width: 25%;
-  padding: 20px 0
+  padding: 20px 0;
+  height: 160px
 }
 
 .block p {
@@ -333,4 +334,36 @@ h4 {
 
 .row {
   margin-top: 70px
+}
+
+.under-gradient {
+  margin-top: 20px
+}
+
+.info-customers {
+  text-align: left;
+  width: 180px;
+  margin: 50px 70px
+}
+
+.info-customers span {
+  font-size: 40px;
+  color: #000;
+  font-family: bold
+}
+
+.info-customers p {
+  font-size: 12px;
+  color: #000;
+}
+
+.customers-logo img {
+  max-height: 50px;
+  max-width: 130px
+}
+
+.customers-logo {
+  width: 600px;
+  margin-top: 50px;
+  margin-right: 50px
 }
