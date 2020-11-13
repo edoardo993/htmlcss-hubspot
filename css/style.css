@@ -33,12 +33,12 @@ body {
 .button-type-a {
   background: #fff;
   color: #EE7E62;
-  margin: 20px
+  margin: 20px;
 }
 
 .button-type-b {
   background: #EE7E62;
-  color: #fff
+  color: #fff;
 }
 
 .clearfix::after {
@@ -50,6 +50,15 @@ body {
 .link-text {
   display: inline;
   padding-right: 15px
+}
+
+.shadow {
+  box-shadow: 0px 0px 30px 5px #ccc;
+  border-radius: 5px
+}
+
+.a {
+  text-decoration: none
 }
 /* end utility classes */
 
@@ -69,11 +78,9 @@ header {
   height: 15px
 }
 
-.first-nav a {
-  text-decoration: none;
+.first-nav .fl a {
   color: #70808C
 }
-
 #border-right {
   display: inline-block;
   height: 18px;
@@ -104,7 +111,6 @@ ul li {
 }
 
 li a {
-  text-decoration: none;
   color: #70808C
 }
 
@@ -123,7 +129,8 @@ li a {
 .jumbotron h1 {
   font-size: 48px;
   width: 600px;
-  color: #374759
+  color: #374759;
+  font-family: bold
 }
 
 .jumbotron h4 {
@@ -147,7 +154,7 @@ li a {
 }
 
 .jumbotron {
-  padding-top: 80px
+  padding-top: 60px
 }
 
 .bg-box {
@@ -170,35 +177,115 @@ li a {
   font-size: 12px;
 }
 
-.box {
-  margin-top: 70px;
+.box-1 {
+  margin-top: 50px;
+  padding: 50px 0;
   background: #fff;
 }
 
-.first-box {
+.content-1 {
   width: 40%;
   text-align: center;
 }
 
-.first-box > img {
+.content-1 > img {
   margin-bottom: 20px;
 }
 
-.second-box {
+.box-button a {
+  font-size: 15px;
+  line-height: 10px;
+  color: #fff;
+  padding: 0 15px
+}
+.content-2 {
   width: 60%;
   text-align: left;
 }
 
-.second-box > h5 {
+.content-2 > p {
   margin-top: 30px;
   margin-bottom: 20px
 }
 
-.second-box h4 {
+.content-2 h5 {
+  font-size: 20px;
+  font-family: bold
+}
+
+h4 {
   font-size: 25px
 }
 
-.first-box .button {
+.box-2 {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.content-1 .button {
   font-size: 30px;
   height: 50px
+}
+
+.content-3 {
+  width: 30%;
+  background: #fff;
+  padding: 20px 40px
+}
+
+.content-4 {
+  width: 30%;
+  background: #fff;
+  margin: 0 60px
+}
+
+/* .content-5 {
+  width: 30%;
+  background: #fff
+} */
+
+.content-3 hr {
+  margin-top: 70px;
+  margin-bottom: 40px
+}
+
+.content-2-list {
+  display: inline-block;
+  margin-top: 30px;
+  padding-right: 20px
+}
+
+.content-2-list span {
+  display: inline-block;
+}
+
+.content-2-list img {
+ position: relative;
+ top: 3px;
+ padding-right: 10px
+}
+
+.content-3-list {
+  display: inline-block;
+  padding-right: 20px;
+  text-align: left
+}
+
+.content-3 h4 {
+  padding-top: 15px;
+  padding-bottom: 40px
+}
+
+.content-3-button {
+  margin: 60px
+}
+
+.content-3-button span {
+  padding: 20px
+}
+
+.content-3 h5 {
+  font-size: 20px;
+  font-family: bold;
+  margin-bottom: 20px
 }
