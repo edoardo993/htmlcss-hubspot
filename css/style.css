@@ -19,7 +19,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .button {
@@ -27,7 +27,7 @@ body {
   height: 10px;
   min-width: 20px;
   padding: 8px 10px;
-  border-radius: 5px
+  border-radius: 4px
 }
 
 .button-type-a {
@@ -45,6 +45,11 @@ body {
   display: table;
   content: "";
   clear: both;
+}
+
+.link-text {
+  display: inline;
+  padding-right: 15px
 }
 /* end utility classes */
 
@@ -64,8 +69,29 @@ header {
   height: 15px
 }
 
-.first-nav img:first-child {
-  height: 15px;
+.first-nav a {
+  text-decoration: none;
+  color: #70808C
+}
+
+#border-right {
+  display: inline-block;
+  height: 18px;
+  line-height: 18px;
+  border-right: 1px solid #70808C;
+  padding-right: 10px
+}
+
+.first-nav .fr .fa {
+  color: #47A2BA
+}
+
+#border-right .link-text {
+  padding-left: 10px
+}
+
+#border-left {
+  padding-left: 10px
 }
 
 .second-nav {
@@ -86,6 +112,7 @@ li a {
   position: relative;
   top: 10px
 }
+
 .bg {
   background: url(../img/jumbotron.png);
   width: 100%;
@@ -93,10 +120,85 @@ li a {
   background-size: cover;
 }
 
-.jumbotron {
-
+.jumbotron h1 {
+  font-size: 48px;
+  width: 600px;
+  color: #374759
 }
 
-.jumbotron h1 {
-  font-size: 30px
+.jumbotron h4 {
+  font-size: 15px;
+  width: 600px;
+  padding-top: 25px;
+  color: #374759;
+  margin-bottom: 20px
+}
+
+.jumbotron .button {
+  height: 80px;
+  line-height: 80px;
+  font-size: 12px;
+  padding: 15px 30px;
+}
+
+.jumbotron h6 {
+  margin-top:20px;
+  color: #374759
+}
+
+.jumbotron {
+  padding-top: 80px
+}
+
+.bg-box {
+  background: #F5F9FC
+}
+
+.cube {
+  padding-top: 50px;
+  text-align: center;
+  width: 800px;
+  margin: 0 auto
+}
+
+.cube h2 {
+  font-size: 45px;
+  margin-bottom: 30px
+}
+
+.cube h5 {
+  font-size: 12px;
+}
+
+.box {
+  margin-top: 70px;
+  background: #fff;
+}
+
+.first-box {
+  width: 40%;
+  text-align: center;
+}
+
+.first-box > img {
+  margin-bottom: 20px;
+}
+
+.second-box {
+  width: 60%;
+  text-align: left;
+}
+
+.second-box > h5 {
+  margin-top: 30px;
+  margin-bottom: 20px
+}
+
+.second-box h4 {
+  font-size: 25px
+}
+
+.first-box .button {
+  font-size: 30px;
+  height: 50px
 }
