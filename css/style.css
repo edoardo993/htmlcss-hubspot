@@ -391,7 +391,7 @@ h4 {
 
 footer {
   background: #374959;
-  height: 500px
+  /* height: 500px */
 }
 
 footer h5 {
@@ -411,10 +411,10 @@ footer h5 {
 }
 
 .footer-box a {
-  color: #fff
+  color: #B1BBC7
 }
 
-.footer-box a:hover {
+.footer-box a:hover, .lenguages a:hover, .copyright-privacy a:hover {
   text-decoration: underline;
   color: #91CFDC
 }
@@ -425,10 +425,46 @@ footer h5 {
 }
 
 .fourth-footer-box .button a {
-  color: #000;
+  color: #B1BBC7;
   text-decoration: none
 }
 
 .fourth-footer-box p:nth-last-child(1) {
   padding-bottom: 30px
+}
+
+.lenguages {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 13px
+}
+
+.lenguages span a {
+  text-decoration: none;
+  color: #B1BBC7;
+  margin-right: 15px
+}
+
+.lenguages hr {
+  margin-top: 20px;
+  color: #5E7386;
+  border: 1px solid
+}
+
+.copyright-privacy .fl span {
+  display: block;
+  color: #fff;
+  margin-top: 10px
+}
+
+.copyright-privacy .fl {
+  margin: 30px 0
+}
+
+.copyright-privacy .fr {
+  margin: 30px 0
+}
+
+.copyright-privacy .fr span a {
+  color: #B1BBC7;
 }
