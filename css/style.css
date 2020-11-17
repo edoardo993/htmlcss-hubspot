@@ -18,6 +18,7 @@
   margin: 0 auto
 }
 
+/* imposto il font per tutta la pagina */
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -38,7 +39,7 @@ body {
 
 .button-type-b {
   background: #EE7E62;
-  color: #fff;
+  color: #fff
 }
 
 .clearfix::after {
@@ -74,6 +75,7 @@ header {
   width: 100%;
 }
 
+/* imposto caratteristiche della prima nav-bar */
 .first-nav {
   height: 80px;
   line-height: 80px;
@@ -82,15 +84,13 @@ header {
   border-bottom: 1px solid #666
 }
 
-.first-nav img:nth-child(2) {
-  height: 15px
-}
-
+/* imposto il colore dei link della prima nav-bar */
 .first-nav .fl a {
   color: #70808C
 }
 
-#border-right {
+/* imposto le caratteristiche della barra di divisione fra English e Contact Us */
+.border-right {
   display: inline-block;
   height: 18px;
   line-height: 18px;
@@ -98,36 +98,40 @@ header {
   padding-right: 10px
 }
 
+/* imposto il colore dell'icona della prima nav-bar */
 .first-nav .fr .fa {
   color: #47A2BA
 }
 
-#border-right .link-text {
+/* imposto il padding fra i testi della prima nav-bar */
+.border-right .link-text, .border-left {
   padding-left: 10px
 }
 
-#border-left {
-  padding-left: 10px
-}
-
+/* imposto le caratteristiche della seconda nav-bar */
 .second-nav {
   height: 80px;
   line-height: 80px;
 }
+
+/* imposto le caratteristiche della lista della seconda nav-bar */
 ul li {
   display: inline-block;
   padding: 0 10px;
 }
 
+/* imposto le caratteristiche dei link della seconda nav-bar */
 li a {
   color: #70808C
 }
 
+/* posiziono l'immagine del logo */
 .logo img {
   position: relative;
   top: 10px
 }
 
+/* imposto le caratteristiche dello sfondo del jumbotron */
 .bg {
   background: url(../img/jumbotron.png);
   width: 100%;
@@ -135,13 +139,14 @@ li a {
   background-size: cover;
 }
 
+/* imposto le caratteristiche dell'h1 del jumbotron */
 .jumbotron h1 {
   font-size: 48px;
   width: 600px;
   color: #374759;
   font-family: bold
 }
-
+/* imposto le caratteristiche dell'h4 del jumbotron */
 .jumbotron h4 {
   font-size: 15px;
   width: 600px;
@@ -150,6 +155,7 @@ li a {
   margin-bottom: 20px
 }
 
+/* imposto le caratteristiche del button del jumbotron */
 .jumbotron .button {
   height: 80px;
   line-height: 80px;
@@ -157,19 +163,23 @@ li a {
   padding: 15px 30px;
 }
 
+/* imposto le caratteristiche dell'h6 del jumbotron */
 .jumbotron h6 {
   margin-top:20px;
   color: #374759
 }
 
+/* imposto il padding-top del jumbotron */
 .jumbotron {
   padding-top: 60px
 }
 
+/* imposto il colore di sfondo del box contenente il div col cubo e gli altri tre div float */
 .bg-box {
   background: #F5F9FC
 }
 
+/* imposto le caratteristiche del box col cubo */
 .cube {
   padding-top: 50px;
   text-align: center;
@@ -177,49 +187,78 @@ li a {
   margin: 0 auto
 }
 
+/* imposto le caratteristiche dell'h2 del div col cubo */
 .cube h2 {
   font-size: 45px;
   margin-bottom: 30px
 }
 
+/* imposto le caratteristiche dell'h5 del div col cubo */
 .cube h5 {
   font-size: 12px;
 }
 
+/* definisco le caratteristiche del box sotto al cubo */
 .box-1 {
   margin-top: 50px;
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 240px;
   background: #fff;
 }
 
+/* definisco le caratteristiche del primo contenuto del box sotto al cubo */
 .content-1 {
   width: 40%;
   text-align: center;
 }
 
+/* imposto un margin-bottom all'immagine del primo contenuto del box sotto al cubo */
 .content-1 > img {
   margin-bottom: 20px;
 }
 
-.box-button a {
+/* imposto le caratteristiche del link del primo contenuto del  box sotto al cubo */
+.box-button span {
   font-size: 15px;
-  line-height: 10px;
-  color: #fff;
-  padding: 0 15px
+  /* line-height: 15px; */
+  /* color: #fff; */
+  /* padding: 0 30px */
 }
+
+/* definisco le caratteristiche del secondo contenuto del box sotto al cubo */
 .content-2 {
   width: 60%;
   text-align: left;
 }
 
+/* imposto i margini del paragrafo del secondo contenuto float sotto al cubo */
 .content-2 > p {
   margin-top: 30px;
-  margin-bottom: 20px
+  margin-bottom: 30px;
+  font-size: 12px
 }
 
+/* imposto le caratteristiche dell'h5 del secondo contenuto float sotto al cubo */
 .content-2 h5 {
   font-size: 20px;
   font-family: bold
+}
+
+.info-features {
+  width: 100%;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.info-features:before {
+  content: "";
+  display: block;
+  float: right;
+  width: 65%;
+  height: 2px;
+  margin-top: 6px;
+  background-color: #899397;
 }
 
 h4 {
@@ -228,7 +267,7 @@ h4 {
 
 .box-2 {
   margin-top: 60px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .content-1 .button {
@@ -239,9 +278,11 @@ h4 {
 .content-3 {
   width: 30%;
   background: #fff;
-  padding: 20px 40px
+  padding: 20px 40px;
+  text-align: center;
 }
 
+/* imposto le caratteristiche del quarto contenuto */
 .content-4 {
   width: 30%;
   background: #fff;
@@ -261,6 +302,7 @@ h4 {
 
 .content-2-list span {
   display: inline-block;
+  font-size: 12px
 }
 
 .content-2-list img {
@@ -273,6 +315,12 @@ h4 {
   display: inline-block;
   padding-right: 20px;
   text-align: left
+}
+
+.content-3-list img {
+ position: relative;
+ top: 3px;
+ padding-right: 10px
 }
 
 .content-3 h4 {
@@ -288,12 +336,17 @@ h4 {
   padding: 20px
 }
 
+.content-3-button span a {
+  color: #fff
+}
+
 .content-3 h5 {
   font-size: 20px;
   font-family: bold;
   margin-bottom: 20px
 }
 
+/* imposto le caratteristiche della row gradient */
 .gradient-row {
   width: 100%;
   height: 700px;
@@ -314,10 +367,16 @@ h4 {
   font-size: 14px
 }
 
+/* imposto le caratteristiche degli 8 blocchi */
 .block {
   width: 25%;
   padding: 20px 0;
   height: 160px
+}
+
+.plus::after {
+  content: "+";
+  line-height: 30px
 }
 
 .block p {
@@ -371,6 +430,7 @@ h4 {
 .man {
   margin-top: 40px
 }
+
 .img-man img {
   height: 300px
 }
@@ -389,36 +449,42 @@ h4 {
   margin: 50px 0
 }
 
+/* imposto lo sfondo del footer */
 footer {
   background: #374959;
-  /* height: 500px */
 }
 
+/* imposto le caratteristiche dell'h5 del footer */
 footer h5 {
   color: #fff;
   margin: 30px 0;
   font-family: bold
 }
 
+/* imposto la width del box del footer */
 .footer-box {
-  width: 24%
+  width: 25%
 }
 
+/* imposto le caratteristiche del paragrafo del box del footer */
 .footer-box p {
   color: #fff;
   padding-bottom: 15px;
   font-size: 13px
 }
 
+/* imposto il colore dei link del box del footer */
 .footer-box a {
   color: #B1BBC7
 }
 
+/* imposto il colore al passaggio del mouse sui link del box del footer */
 .footer-box a:hover, .lenguages a:hover, .copyright-privacy a:hover {
   text-decoration: underline;
   color: #91CFDC
 }
 
+/* imposto le caratteristiche del terzo tipo di button */
 .button-type-c {
   border-color: #DBDEE0;
   background: #DBDEE0;
@@ -433,6 +499,7 @@ footer h5 {
   padding-bottom: 30px
 }
 
+/* imposto le caratteristiche del box lenguages del footer */
 .lenguages {
   text-align: center;
   margin-top: 100px;
@@ -445,26 +512,26 @@ footer h5 {
   margin-right: 15px
 }
 
+/* imposto le caratteristiche dell'hr del footer */
 .lenguages hr {
   margin-top: 20px;
   color: #5E7386;
   border: 1px solid
 }
 
+/* imposto le caratteristiche dello span del box copyright */
 .copyright-privacy .fl span {
   display: block;
   color: #fff;
   margin-top: 10px
 }
 
-.copyright-privacy .fl {
+/* imposto il margine top e bottom del box copyright del footer */
+.copyright-privacy .fl, .copyright-privacy .fr {
   margin: 30px 0
 }
 
-.copyright-privacy .fr {
-  margin: 30px 0
-}
-
+/* imposto il colore dei link degli span del box copyright del footer */
 .copyright-privacy .fr span a {
   color: #B1BBC7;
 }
