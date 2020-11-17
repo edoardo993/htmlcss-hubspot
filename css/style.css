@@ -135,10 +135,25 @@ li a {
 .bg {
   background: url(../img/jumbotron.png);
   width: 100%;
-  height: 700px;
-  background-size: cover;
+  height: 695px;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-color: #fff4ef;
+  position:relative;
 }
 
+.bg::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  border-top: 3px solid #33475b;
+  border-bottom: 3px solid #33475b;
+  background: #afebe4;
+  height: 80px;
+  width: 100%;
+
+}
 /* imposto le caratteristiche dell'h1 del jumbotron */
 .jumbotron h1 {
   font-size: 48px;
@@ -314,7 +329,8 @@ h4 {
 .content-3-list {
   display: inline-block;
   padding-right: 20px;
-  text-align: left
+  text-align: left;
+  font-size: 14px
 }
 
 .content-3-list img {
@@ -353,6 +369,11 @@ h4 {
   background: linear-gradient(to right, #48A4B8 , #53B8A8);
   margin-top: 60px;
   text-align: center;
+}
+
+/* imposto il font-size della descrizione dei tre box sotto al cubo */
+.content-3 p {
+  font-size: 14px
 }
 
 .top-text h2 {
@@ -424,7 +445,7 @@ h4 {
 .customers-logo {
   width: 600px;
   margin-top: 50px;
-  margin-right: 50px
+  margin-right: 50px;
 }
 
 .man {
@@ -475,7 +496,8 @@ footer h5 {
 
 /* imposto il colore dei link del box del footer */
 .footer-box a {
-  color: #B1BBC7
+  color: #B1BBC7;
+  text-decoration: none
 }
 
 /* imposto il colore al passaggio del mouse sui link del box del footer */
@@ -486,17 +508,25 @@ footer h5 {
 
 /* imposto le caratteristiche del terzo tipo di button */
 .button-type-c {
-  border-color: #DBDEE0;
+  border-color: #000;
   background: #DBDEE0;
 }
 
 .fourth-footer-box .button a {
-  color: #B1BBC7;
-  text-decoration: none
+  color: #000;
 }
 
 .fourth-footer-box p:nth-last-child(1) {
   padding-bottom: 30px
+}
+
+.icons {
+  margin-top: 20px
+}
+
+.icons .fa {
+  padding-right: 20px;
+  color: #fff
 }
 
 /* imposto le caratteristiche del box lenguages del footer */
